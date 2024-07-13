@@ -261,6 +261,8 @@ top: 500px;
   grid-template-rows: 1fr 1fr;
   gap: 0.5rem;
   border-radius: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: -0.6rem;
 }
 
 .card{
@@ -295,7 +297,7 @@ top: 500px;
 .learnMoreSmall{
   color: #0071e3;;
   background-color: white;
-  border-color: #0071e3;;
+  border-color: #0071e3;
   border-radius: 40px;
   padding: 7px 19px;
   font-size: 14px;
@@ -366,4 +368,150 @@ top: 500px;
   transform: translateY(0);
   opacity: 1;
 }
+
+/* Slider Css */
+
+.img-slider{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  position: relative;
+  width: 80vw;
+  height: 95vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100vh;
+  display: flex;
+  
+}
+
+input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slideImg{
+  width: 1250px;
+  height: 700px;
+}
+
+.info{
+  position: absolute;
+  top: 33rem;
+  color: white;
+  margin-left: 2rem;
+}
+
+.streamNow{
+  letter-spacing: 0.022rem;
+  background: white;
+  font-size: 17px;
+  border-radius: 40px;
+  padding: 10px 25px;
+}
+
+/* Manual Navigation */
+
+.navigationManual{
+  position:absolute;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 92vh;
+  
+}
+
+.manualBtn{
+  border: 0.1rem solid whitesmoke;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.manualBtn:not(:last-child){
+  margin-right: 0.7rem;
+}
+
+.manualBtn:hover{
+  background: gray;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+/* Automatic Navigation */
+
+.navigationAuto{
+  position:absolute;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 92vh;
+}
+
+.autobtn{
+  border: 0.1rem solid whitesmoke;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigationAuto div:not(:last-child){
+  margin-right: 0.7rem;
+}
+
+#radio1:checked ~ .navigationAuto .auto-btn1{
+  background: gray;
+}
+
+#radio2:checked ~ .navigationAuto .auto-btn2{
+  background: gray;
+}
+
+#radio3:checked ~ .navigationAuto .auto-btn3{
+  background: gray;
+}
+
+#radio4:checked ~ .navigationAuto .auto-btn4{
+  background: gray;
+}
+
+#radio5:checked ~ .navigationAuto .auto-btn5{
+  background: gray;
+}
+
 
